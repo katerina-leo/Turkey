@@ -17,11 +17,11 @@
 .page-main__title {
   padding-top: 100px;
   text-align: center;
-  margin: 0px;
+  margin: 0;
   position: relative;
   padding-bottom: 120px;
 
-  &:after {
+  &::after {
     content: "";
     width: 40px;
     height: 20px;
@@ -40,15 +40,15 @@
   font-size: 60px;
   line-height: 90px;
   font-family: "Playfair Display", serif;
-  margin: 0px;
+  margin: 0;
   display: block;
 }
 
 .page-main__title-2 {
   font-size: 80px;
   font-family: "Montserrat", sans-serif;
-  margin: 0px;
-  color: #fff;
+  margin: 0;
+  color: #ffffff;
   font-weight: 700;
 }
 

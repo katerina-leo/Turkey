@@ -10,7 +10,7 @@
   border-radius: 10px;
   font-family: $font-family;
   box-sizing: border-box;
-  padding: 29px 0px;
+  padding: 29px 0;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -53,6 +53,7 @@
   padding-bottom: 16px;
   margin-left: 0;
 }
+
 .spend__price-symbol {
   font-size: 14px;
   vertical-align: center;

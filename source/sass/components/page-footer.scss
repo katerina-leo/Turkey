@@ -17,16 +17,16 @@
 .page-footer__title {
   font-size: 16px;
   line-height: 25px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .page-footer__list {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
   list-style: none;
   align-items: start;
 }
@@ -34,13 +34,13 @@
 .page-footer__link {
   font-size: 16px;
   line-height: 26px;
-  color: #fff;
+  color: #ffffff;
 
   &:hover {
     opacity: 0.6;
   }
 
-  &:hover {
+  &:active {
     opacity: 0.3;
   }
 }
