@@ -1,0 +1,24 @@
+.social {
+  padding-left: 0;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__link-icon {
+  fill: #d0d0d0;
+
+  &:hover {
+    fill: $white;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

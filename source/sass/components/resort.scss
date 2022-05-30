@@ -1,0 +1,39 @@
+.resort {
+  width: 100%;
+  height: 500px;
+  background-image: url(../../img/image.jpg);
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.resort__intro {
+  display: grid;
+}
+
+.resort__image {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  background-size: contain;
+  grid-area: 1/-1/1/-1;
+  width: 92%;
+  height: auto;
+  // height: 540px;
+  filter: brightness(76%);
+  box-shadow: 0px 27px 22px 0px rgba(0, 0, 0, 0.15);
+  // background-color: rgba(0, 0, 0, 0.6);
+}
+
+.resort__title {
+  font-size: 160px;
+  line-height: 202px;
+  color: $white;
+  margin: auto;
+  z-index: 3;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translateX(-50%);
+  grid-area: 1/-1/1/-1;
+}
