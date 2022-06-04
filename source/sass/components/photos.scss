@@ -1,9 +1,13 @@
 .photos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 504px;
+  width: 100%;
+
   grid-gap: 10px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .photos__image {

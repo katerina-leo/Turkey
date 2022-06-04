@@ -3,17 +3,27 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 28px 0 28px 22px;
+  padding: 20px 0 20px 15px;
 
   border: 1px solid $border-gray;
   border-radius: 10px;
+
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 0 28px 22px;
+  }
 }
 
 .info__wrapper {
   box-sizing: border-box;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .info__wrapper:not(:last-child) {

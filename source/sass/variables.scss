@@ -2,11 +2,16 @@ $font-family: "Montserrat", sans-serif;
 
 $white: #ffffff;
 $black: #000000;
+$font-color-mob: #00beac;
 $color-hover: rgba(12, 162, 150, 1);
 $bg-color: #f5fffe;
 $font-color: rgba(86, 86, 86, 1); //#565656
-$font-hover: rgba(0, 167, 127, 1);
-$border-gray: rgba(229, 229, 229, 1);
+
+$border-gray: #e5e5e5;
+$gray: #d0d0d0;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
 // $bg-blue: #81b3d2;
 // $bg-blue-hover: #669ec0;
@@ -28,7 +33,3 @@ $border-gray: rgba(229, 229, 229, 1);
 // $player__interface-tablet: rgba($black, 0.6);
 // $player-icon-mobile: #5c6870;
 // $player-icon-mobile-hover: $text-color;
-
-// $mobile-width-only: 767px;
-// $tablet-width: 768px;
-// $desktop-width: 1200px;

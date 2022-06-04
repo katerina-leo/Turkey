@@ -1,3 +1,7 @@
+.more {
+  background-color: #f5fffe;
+}
+
 .more__title-1 {
   color: #0ca296;
 }
@@ -19,13 +23,22 @@
 .more__list {
   height: 100%;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 20px;
-  grid-template-rows: 320px 320px;
   padding: 0 50px;
   margin: 0;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 300px 300px 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px 320px;
+  }
 }
 
 .more__item {
@@ -33,11 +46,15 @@
 }
 
 .more__item--row {
-  grid-row: span 2;
+  @media (min-width: $tablet-width) {
+    grid-row: span 2;
+  }
 }
 
 .more__item--column {
-  grid-column: span 2;
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
 }
 
 .more__link {

@@ -4,22 +4,51 @@
 
 .page-main__header {
   background: url("../img/image-1-11.jpg") no-repeat center;
-  height: 800px;
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
+}
+
+.page-main__header-realitive {
   position: relative;
 }
 
 .page-main__text {
   position: absolute;
-  top: 180px;
+  width: 290px;
+  height: 170px;
+  top: 110px;
   left: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 250px;
+    top: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 891px;
+    height: 374px;
+    top: 300px;
+    left: 30px;
+  }
 }
 
 .page-main__title {
-  padding-top: 100px;
+  padding: 100px 10px 120px;
   text-align: center;
   margin: 0;
   position: relative;
-  padding-bottom: 120px;
 
   &::after {
     content: "";
@@ -57,7 +86,7 @@
   line-height: 32px;
   max-width: 950px;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 30px;
   text-align: center;
   margin: auto;
   margin-bottom: 80px;
@@ -66,14 +95,21 @@
 .page-main__wrapper {
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 1160px;
+  max-width: 1200px;
   width: 92%;
   margin: 0 auto;
-  // padding-right: 50px;
-  // padding-left: 50px;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 60px;
+  }
 }
 
 .page-main__item-image {

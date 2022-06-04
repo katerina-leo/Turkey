@@ -15,12 +15,15 @@
 </head>
 
 <body class="page__body">
-  <div class="container">
+
     <header class="page-header">
-      <nav class="page-header__nav main-nav">
-        <a class="page-header__logo" href="index.html">
+      <nav class="page-header__nav container main-nav main-nav--closed">
+        <a class="page-header__logo main-nav__logo" href="index.html">
           <img class="page-header__img" src="img/logo.svg" href="#" width="120" height="30">
         </a>
+        <button class="page-header__toggle main-nav__toggle main-nav__toggle--close" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">О Турции</a>
@@ -28,22 +31,22 @@
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link" href="#">Курорты</a>
             <ul class="main-nav__list-2">
-              <li class="main-nav__item main-nav__item-2">
+              <li class="main-nav__item-2">
                 <a href="" class="main-nav__link main-nav__link-2">Анталия</a>
               </li>
-              <li class="main-nav__item main-nav__item-2">
-                <a href="" class="main-nav__link main-nav__link-2">Кемер</a>
+              <li class="main-nav__item-2">
+                <a href="kemer.html" class="main-nav__link main-nav__link-2">Кемер</a>
               </li>
-              <li class="main-nav__item main-nav__item-2">
+              <li class="main-nav__item-2">
                 <a href="" class="main-nav__link main-nav__link-2">Белек</a>
               </li>
-              <li class="main-nav__item main-nav__item-2">
+              <li class="main-nav__item-2">
                 <a href="" class="main-nav__link main-nav__link-2">Алания</a>
               </li>
-              <li class="main-nav__item main-nav__item-2">
+              <li class="main-nav__item-2">
                 <a href="" class="main-nav__link main-nav__link-2">Мармарис</a>
               </li>
-              <li class="main-nav__item main-nav__item-2">
+              <li class="main-nav__item-2">
                 <a href="" class="main-nav__link main-nav__link-2">Сиде</a>
               </li>
             </ul>
@@ -52,8 +55,9 @@
             <a class="main-nav__link" href="">Авиабилеты</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">Тесты на covid</a>
+            <a class="main-nav__link" href="">Достопримечательности</a>
           </li>
+
         </ul>
       </nav>
     </header>
@@ -61,93 +65,92 @@
 
       <section class="page-main__header-resort resort">
         <div class="resort__intro">
-          <img class="resort__image" src="img/kemer-2.jpg" alt="" width="1020" >
+          <img class="resort__image" src="img/kemer-2.jpg" alt="" width="1200" height="500">
           <h1 class="resort__title">kemer</h1>
 
         </div>
       </section>
-      <div class="page-main__wrapper">
-      <div class="page-main__content">
-        <nav class="page-main__nav menu">
+      <div class="page-main__wrapper container">
+        <div class="page-main__content">
+          <nav class="page-main__nav menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">О Кемере</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Гостиницы</a>
 
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Neighborhoods</a>
-
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Schools</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Jobs</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Leisure and parks</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="page-main__description resort-description">
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Jobs</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Информация</a>
+              </li>
+            </ul>
+          </nav>
+          <section class="page-main__description resort-description">
 
 
-          <h2 class="visually-hidden">Описание курорта</h2>
-          <p class="resort-description__text">Named for a local swamp fish, Paraty sits on Brazil's southeastern coast, 125 miles south of Rio, with the Bocaino
-          Mountains at its back. The small colonial town's center is a national historic monument with well-preserved buildings on
-          its pedestrian-only streets. Take a boat trip out into the bay to the flotillas of islands and coves nearby. Explore
-          sugarcane plantations and hike or take a train through Atlantica Forest. Keep an eye out for the monkeys that roam the
-          cobblestone streets.</p>
+            <h2 class="visually-hidden">Описание курорта</h2>
+            <p class="resort-description__text">Named for a local swamp fish, Paraty sits on Brazil's southeastern coast, 125 miles south of Rio, with the Bocaino
+            Mountains at its back. The small colonial town's center is a national historic monument with well-preserved buildings on
+            its pedestrian-only streets. Take a boat trip out into the bay to the flotillas of islands and coves nearby. Explore
+            sugarcane plantations and hike or take a train through Atlantica Forest. Keep an eye out for the monkeys that roam the
+            cobblestone streets.</p>
 
-          <p>The town is located on the Bay of Ilha Grande, which is dotted with many tropical islands. Rising as high as 1,300
-          meters behind the town are tropical forests, mountains, and waterfalls. It is the southernmost and westernmost city in
-          Rio de Janeiro state.</p>
+            <p>The town is located on the Bay of Ilha Grande, which is dotted with many tropical islands. Rising as high as 1,300
+            meters behind the town are tropical forests, mountains, and waterfalls. It is the southernmost and westernmost city in
+            Rio de Janeiro state.</p>
 
-          <p>The city's economic activity revived as a port for a new boom, the coffee trade of the Paraiba do Sul River Valley in
-          the early 19th century, until a railway along the valley created cheaper transport to the port of Rio de Janeiro.
-          Another smaller revival came late in the 19th century with the production of cachaça, which is a sugarcane-derived
-          spirit best known today as the basis for Brazil's most famous cocktail, the caipirinha.</p>
+            <p>The city's economic activity revived as a port for a new boom, the coffee trade of the Paraiba do Sul River Valley in
+            the early 19th century, until a railway along the valley created cheaper transport to the port of Rio de Janeiro.
+            Another smaller revival came late in the 19th century with the production of cachaça, which is a sugarcane-derived
+            spirit best known today as the basis for Brazil's most famous cocktail, the caipirinha.</p>
 
-          <p>There are many musical and cultural events, the most prominent of which is the FLIP – Festa Literaria Internacional de
-          Paraty (International Literary Festival of Paraty). The town is also known for its local festivals on Catholic holy
-          dates, such as the Feast of the Holy Ghost.</p>
+            <p>There are many musical and cultural events, the most prominent of which is the FLIP – Festa Literaria Internacional de
+            Paraty (International Literary Festival of Paraty). The town is also known for its local festivals on Catholic holy
+            dates, such as the Feast of the Holy Ghost.</p>
 
-        </section>
-        <section class="page-main__articles articles">
-          <h2 class="articles__title">ARTICLES ABOUT PARATY</h2>
-          <div class="articles__wrapper">
-          <article class="articles__item">
+          </section>
+          <section class="page-main__articles articles">
+            <h2 class="articles__title">ARTICLES ABOUT PARATY</h2>
 
-              <img class="articles__item-image" src="img/side.jpg">
-              <a href="www.magnificentworld.com" class="articles__link">
+            <article class="articles__item">
 
-                <h3 class="articles__link-heading">Expat Life in Brazil: Living the Dream in South America</h3>
-                <p class="articles__link-text">www.magnificentworld.com</p>
-              </a>
-          </article>
-          <article class="articles__item">
+                <img class="articles__item-image" src="img/side.jpg">
+                <a href="www.magnificentworld.com" class="articles__link">
 
-              <img class="articles__item-image" src="img/side.jpg">
-              <a href="#side" class="articles__link">
+                  <h3 class="articles__link-heading">Expat Life in Brazil: Living the Dream in South America</h3>
+                  <p class="articles__link-text">www.magnificentworld.com</p>
+                </a>
+            </article>
+            <article class="articles__item">
 
-                <h3 class="articles__link-heading">Best Things to Do in Paraty, Brazil You Can't Miss</h3>
-                <p class="articles__link-text">www.laidbacktrip.com</p>
-              </a>
+                <img class="articles__item-image" src="img/side.jpg">
+                <a href="#side" class="articles__link">
 
-          </article>
-          <article class="articles__item">
+                  <h3 class="articles__link-heading">Best Things to Do in Paraty, Brazil You Can't Miss</h3>
+                  <p class="articles__link-text">www.laidbacktrip.com</p>
+                </a>
 
-              <img class="articles__item-image" src="img/side.jpg">
-              <a href="#side" class="articles__link">
+            </article>
+            <article class="articles__item">
 
-                <h3 class="articles__link-heading">Worth the trip: A visit to paraty</h3>
-                <p class="articles__link-text">www.vayaadventures.com</p>
-              </a>
-            </li>
-          </article>
-</div>
-        </section>
-      </div>
+                <img class="articles__item-image" src="img/side.jpg">
+                <a href="#side" class="articles__link">
+
+                  <h3 class="articles__link-heading">Worth the trip: A visit to paraty</h3>
+                  <p class="articles__link-text">www.vayaadventures.com</p>
+                </a>
+              </li>
+            </article>
+
+          </section>
+        </div>
       <aside class="page-main__aside aside">
         <div class="aside__desc info">
           <div class="info__wrapper">
@@ -172,7 +175,7 @@
             </div>
           </div>
         </div>
-        <div class="aside__photos photos">
+       <div class="aside__photos photos">
             <img class="photos__image photos__image--big" src="img/photo_1.jpg" alt="Картина с горным пейзажем с домами">
             <img class="photos__image" src="img/photo_2.jpg" alt="Улица с пешеходной зоной">
             <img class="photos__image" src="img/photo_3.jpg" alt="Картина у лодками">
@@ -259,43 +262,11 @@
             </div>
           </dl>
 
-          <!-- <table class="table-price">
-                    <caption class="table__caption">Mothly spend for a family of 4</caption>
-                    <colgroup>
-                      <col class="tarif-name">
-                      <col span="3" class="tarif-properties">
-                      <col span="2" class="price">
-                    </colgroup>
-                    <tr class="table__title">
-                      <th class="table__th">Rent</th>
-                      <th class="table__th">Groceries</th>
-                      <th class="table__th">Others</th>
-                      <th class="table__th">Total</th>
-
-                    </tr>
-                    <tr class="table__price">
-                      <td>$ 1,800</td>
-                      <td>$ 1,600</td>
-                      <td>$
-                      2,200</td>
-                      <td>$ 5,600</td>
-
-                    </tr>
-                    <tr class="table__description">
-                      <td>This is for a 3 bedroom(40Sqm) within city center.</td>
-                      <td>The average cost of Groceries for a family of 4.</td>
-                      <td>the average monthly cost of Gas, Water, Electricity, and Internet.</td>
-                      <td>This is the average mothly spending for a family of four(4)</td>
-
-                    </tr>
-
-
-                  </table>  -->
         </div>
       </aside>
       </div>
-      <section class="suitcases">
-        <div class="suitcases__wrapper">
+      <section class="suitcases ">
+        <div class="suitcases__wrapper container">
 
             <div class="suitcases__description">
               <b class="suitcases__slogan">Are you ready to move?</b>
@@ -307,7 +278,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <!-- <div class="page-footer__wrapper">
         <ul class="page-footer__list">
           <h4 class="page-footer__title">Legal</h4>
           <li class="page-footer__item">
@@ -412,9 +383,10 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </footer>
-  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
