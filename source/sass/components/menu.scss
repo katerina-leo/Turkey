@@ -39,11 +39,11 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: $font-hover;
+    background-color: $color-hover;
   }
 
   &:hover {
-    color: $font-hover;
+    color: $color-hover;
     cursor: pointer;
 
     &::after {
