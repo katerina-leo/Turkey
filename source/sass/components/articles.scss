@@ -20,6 +20,7 @@
     grid-template-rows: auto 213px;
   }
 }
+
 .articles__title {
   font-size: 14px;
   line-height: 16px;
@@ -92,9 +93,6 @@
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 8px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
