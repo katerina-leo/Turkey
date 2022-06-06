@@ -32,7 +32,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
 
-    grid-template-rows: 300px 300px 400px;
+    grid-template-rows: 300px 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,13 +46,13 @@
 }
 
 .more__item--row {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-row: span 2;
   }
 }
 
 .more__item--column {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: span 2;
   }
 }

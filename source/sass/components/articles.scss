@@ -1,22 +1,16 @@
 .articles {
   padding: 0;
-
   margin: 0;
   height: auto;
   display: grid;
   row-gap: 20px;
   width: 100%;
-
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    grid-template-rows: auto 300px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-rows: auto 213px;
+    // grid-template-rows: auto 300px;
   }
 }
 
@@ -43,6 +37,14 @@
   display: grid;
   max-width: 700px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 213px;
+  }
 }
 
 .articles__item-image {
