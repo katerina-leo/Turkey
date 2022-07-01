@@ -6,6 +6,14 @@
 
   grid-gap: 10px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 390px 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 300px 200px;
+  }
 }
 
 .photos__image {
