@@ -41,7 +41,7 @@
 }
 
 .resort__title {
-  font-size: 90px;
+  font-size: 70px;
   line-height: 100px;
   color: $white;
   margin: auto;
@@ -51,7 +51,7 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    font-size: 160px;
+    font-size: 130px;
     line-height: 202px;
   }
   // grid-area: 1/-1/1/-1;

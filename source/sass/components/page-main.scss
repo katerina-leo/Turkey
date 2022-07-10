@@ -107,7 +107,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 504px;
     column-gap: 60px;
   }
 }
@@ -123,6 +123,7 @@
 }
 
 .page-main__link {
+  grid-area: 1/-1/1/-1;
   height: 100%;
   width: 100%;
   display: grid;
@@ -132,7 +133,6 @@
   border-radius: 10px;
   padding: 20px 20px 40px 20px;
   box-sizing: border-box;
-  grid-area: 1/-1/1/-1;
 
   &:hover {
     opacity: 1;
@@ -169,6 +169,16 @@
 
 .page-main__articles {
   display: grid;
-  grid-column: 1fr 1fr 1fr;
-  max-width: 640px;
+  margin-bottom: 30px;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 640px;
+  }
 }
