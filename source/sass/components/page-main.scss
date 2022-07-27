@@ -81,6 +81,10 @@
   font-weight: 700;
 }
 
+.page-main__article {
+  margin-bottom: 50px;
+}
+
 .page-main__desc {
   font-size: 26px;
   line-height: 32px;
@@ -109,6 +113,13 @@
     display: grid;
     grid-template-columns: auto 504px;
     column-gap: 60px;
+  }
+}
+
+.page-main__wrapper--klimat {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 480px;
+    column-gap: 50px;
   }
 }
 

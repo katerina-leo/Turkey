@@ -1,0 +1,178 @@
+.year-temperature__title {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 25%;
+    height: 1px;
+    background-color: $gray;
+    margin-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 38%;
+      margin-right: 30px;
+    }
+  }
+
+  &::after {
+    content: "";
+    flex-shrink: 0;
+    width: 25%;
+    height: 1px;
+    background-color: $gray;
+    margin-left: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 38%;
+      margin-left: 30px;
+    }
+  }
+}
+
+.year-temperature__header {
+  margin-bottom: 15px;
+}
+
+.year-temperature__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+}
+
+.year-temperature__month-name {
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.year-temperature__winter,
+.year-temperature__spring,
+.year-temperature__summer,
+.year-temperature__autumn {
+  display: table-row;
+  border-bottom: 1px solid $white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    flex-grow: 1;
+    border-bottom: 0;
+    border-right: 1px solid $white;
+  }
+}
+
+.year-temperature__winter div,
+.year-temperature__spring div,
+.year-temperature__summer div,
+.year-temperature__autumn div {
+  display: table-cell;
+  padding: 7px 10px 9px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 4px 9px;
+  }
+}
+
+.year-temperature__winter div {
+  background: $bg-winter;
+}
+
+.year-temperature__winter div.year-temperature__month-day,
+.year-temperature__winter div.year-temperature__month-precipitation,
+.year-temperature__winter div.year-temperature__month-water {
+  background: $bg-winter-blue;
+}
+
+.year-temperature__month-name span {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.year-temperature__spring div {
+  background: $bg-spring;
+}
+
+.year-temperature__spring div.year-temperature__month-day,
+.year-temperature__spring div.year-temperature__month-precipitation,
+.year-temperature__spring div.year-temperature__month-water {
+  background: $bg-spring-green;
+}
+
+.year-temperature__summer div {
+  background: $bg-summer;
+}
+
+.year-temperature__summer div.year-temperature__month-day,
+.year-temperature__summer div.year-temperature__month-precipitation,
+.year-temperature__summer div.year-temperature__month-water {
+  background: $bg-summer-orange;
+}
+
+.year-temperature__autumn div {
+  background: $bg-autumn;
+}
+
+.year-temperature__autumn div.year-temperature__month-day,
+.year-temperature__autumn div.year-temperature__month-precipitation,
+.year-temperature__autumn div.year-temperature__month-water {
+  background: $bg-autumn-yellow;
+}
+
+div.year-temperature__month-precipitation {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      background: center left repeat-x;
+
+      background-image: url("../../img/snow.svg");
+      text-align: center;
+    }
+  }
+}
+
+div.year-temperature__month-water {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+
+      background: center left repeat-x;
+
+      background-image: url("../../img/watertemp.svg");
+      text-align: center;
+    }
+  }
+}

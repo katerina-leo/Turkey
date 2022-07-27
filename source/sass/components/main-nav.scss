@@ -1,13 +1,15 @@
 .main-nav {
   // position: relative;
   width: 100%;
-  position: fixed;
+  // position: fixed;
   z-index: 100;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    position: fixed;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    padding: 10px;
     box-sizing: border-box;
     height: 82px;
     display: grid;
